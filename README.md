@@ -4,7 +4,7 @@ This APP enables you to write and read posts.
 
 1) At firs you must chose folder, where you want deploy this APP.
 
-2) Next step will be cloning reposotory to chosen folder by command 
+2) Next step will be cloning reposotory to chosen folder by command:
 
 git clone git@github.com:smdeile/posts-and-comments.git
 
