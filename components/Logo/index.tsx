@@ -3,8 +3,8 @@ import { LogoWrapper, LogoTitle, LogoSubTitle } from './Logo.styles';
 export default function Logo() {
     return (
         <LogoWrapper>
-            <LogoTitle>P&nP</LogoTitle>
-            <LogoSubTitle>posts and new posts</LogoSubTitle>
+            <LogoTitle>P&C</LogoTitle>
+            <LogoSubTitle>posts and comments</LogoSubTitle>
         </LogoWrapper>
     );
 }
