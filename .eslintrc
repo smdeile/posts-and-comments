@@ -1,0 +1,110 @@
+{
+  "globals": {
+    "React": "writable"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    } // Allows for the parsing of JSXz
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@root",
+            "./pages/"
+          ],
+          [
+            "@public",
+            "./public/"
+          ],
+          [
+            "@config",
+            "./config/"
+          ],
+          [
+            "@components",
+            "./components/"
+          ],
+          [
+            "@common",
+            "./common/"
+          ],
+          [
+            "@redux",
+            "./redux/"
+          ],
+          [
+            "@stories",
+            "./stories/"
+          ],
+          [
+            "@services",
+            "./services/"
+          ]
+        ],
+        "extensions": [
+          ".tsx",
+          ".ts",
+          ".js",
+          ".jsx",
+          ".json",
+          ".scss",
+          ".svg",
+          ".gif",
+          ".png",
+          ".jpeg",
+          ".jpg",
+          ".d.ts"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "no-console": "warn",
+    "no-await-in-loop": "error",
+    "no-template-curly-in-string": "error",
+    "array-callback-return": "error",
+    "default-case": "error",
+    "guard-for-in": "error",
+    "max-classes-per-file": "error",
+    "no-alert": "error",
+    "no-caller": "error",
+    "no-constructor-return": "error",
+    "no-empty-function": "error",
+    "no-eq-null": "error",
+    "no-eval": "error",
+    "no-else-return": "error",
+    "no-extra-bind": "error",
+    "no-extra-label": "error",
+    "no-implicit-globals": "error",
+    "newline-before-return": "error",
+    "no-implied-eval": "error",
+    "require-await": "error",
+    "radix": "error",
+    "no-shadow": "error"
+  },
+  "plugins": [
+    "react-hooks"
+  ]
+}
